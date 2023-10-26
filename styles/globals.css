@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Sedgwick Ave Display";
+  src: url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Roboto";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "Roboto";
+}
+
+.base-wrapper {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-title {
+  font-family: "Sedgwick Ave Display", cursive;
+}
+
+.roboto {
+  font-family: "Roboto";
+}
+
+.hover-link {
+  @apply hover:text-[#4e67eb] text-[#291D89] border-transparent hover:border-[#291D89] transition-all duration-300 cursor-pointer;
+}
+
+.primary-color {
+  @apply text-[#291D89];
+}
+
+.btn-primary {
+  @apply w-full bg-[#4e67eb] hover:bg-[#291D89] text-white rounded-[30px] flex items-center justify-center text-[20px] cursor-pointer transition-all py-[7px];
 }
