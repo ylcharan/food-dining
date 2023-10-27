@@ -1,15 +1,15 @@
 import React from "react";
 import FoodCard from "@/components/FoodCard";
-import image1 from "../public/burger.jpeg";
-import image2 from "../public/dumBiriyani.jpeg";
-import image3 from "../public/frechfries.jpeg";
-import image4 from "../public/pizza.jpeg";
-import image5 from "../public/pancakes.webp";
-import image6 from "../public/roll.jpeg";
-import image7 from "../public/tan.jpeg";
-import image8 from "../public/idle.jpeg";
-import image9 from "../public/rice.jpeg";
-import image10 from "../public/ramen.jpeg";
+import image1 from "@/public/burger.jpeg";
+import image2 from "@/public/dumBiriyani.jpeg";
+import image3 from "@/public/frechfries.jpeg";
+import image4 from "@/public/pizza.jpeg";
+import image5 from "@/public/pancakes.webp";
+import image6 from "@/public/roll.jpeg";
+import image7 from "@/public/tan.jpeg";
+import image8 from "@/public/idle.jpeg";
+import image9 from "@/public/rice.jpeg";
+import image10 from "@/public/ramen.jpeg";
 
 export default function Food() {
   const data = [
